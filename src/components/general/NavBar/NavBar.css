@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 .navbar {
     list-style-type: none;
     margin: 0;
@@ -46,4 +47,54 @@
   div{
     background-color: #4CAF50;
     width: 100%;
+=======
+.navbar {
+    list-style-type: none;
+    margin: 0;
+    padding: 66px 150px;
+    padding-bottom: 120px;
+    background-color: #4CAF50;
+    
+    
+  }
+  
+  .categoria {
+    float: right;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1vw;
+    
+  }
+  
+  .categoria a {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 25px;
+    margin: 0;
+    text-decoration: none;
+    font-size: 1vw;
+  }
+  
+  .categoria a:hover {
+    background-color: #333;
+    border-radius: 20px;
+  }
+
+  .logo {
+    background-color: #4CAF50;
+    display: inline-block;
+    padding: 50px;
+    float: left;
+  }
+
+  h1 {
+    display: inline-block;
+    padding: 0px;
+    margin: 0px;
+  }
+
+  div{
+    background-color: #4CAF50;
+    width: 100%;
+>>>>>>> 646e5945c2a3efe623d922f997ed6c270e0bcfe7
   }
