@@ -1,17 +1,22 @@
-import './styles/App.css';
-import './components/general/NavBar/NavBar.css';
-import NavBar from './components/general/NavBar/NavBar';
-import galeria from './components/Product/galeria.jsx';
+import './reset.css';
+import NavAndWidgetCart from './components/general/NavAndWidgetCart/NavAndWidgetCart';
+import Home from './components/Home';
+import Category from './components/Category';
 
 function App() {
-  const carritoDeCompra = () => {
-    alert('Sitio en construcción');
+  const sectionToShow = (section) => {
+    switch(section) {
+      case 'Home': return <Home />;
+      case 'Category': return <Category />;
+      default: return <Home />
+    }
   }
+
   return (
-    <div>
-      <NavBar action={carritoDeCompra}/>
-      <galeria/>
-    </div>
+    <>
+      <NavAndWidgetCart />
+      {sectionToShow('Home')}
+    </>
   );
 }
 
