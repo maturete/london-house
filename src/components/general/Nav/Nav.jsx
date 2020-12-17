@@ -15,11 +15,12 @@ function Nav({titulo, action}) {
                     <li className="categoria"><a href="">Telas</a></li>
                     <li className="categoria"><a href="">Accesorios</a></li>
                     <li className="categoria"><a href="">Contacto</a></li>
+                    {
+                    !productCant && <NavCart action={action} productCant={productCant} />
+                    }
                 </ul>
                 
-                {
-                    !!productCant && <NavCart action={action} productCant={productCant} />
-                }
+                
             </div>
         </nav>
     )

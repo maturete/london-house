@@ -11,7 +11,7 @@ const NavAndWidgetCart = () => {
 
     return (
         <>
-            <Nav titulo="DoggyStore" action={openWidgetCart} />
+            <Nav action={openWidgetCart} />
             <WidgetCart show={showWidgetCart} action={openWidgetCart} />
         </>
     )
